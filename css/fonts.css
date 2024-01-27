@@ -1,0 +1,34 @@
+/* /fonts.css/ */
+
+
+/* Cervanttis */
+@font-face {
+  font-family: 'Cervanttis';
+  src: local('Cervanttis'), url('../assets/fonts/Cervanttis.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Guild of Professional Actors */
+@font-face {
+  font-family: 'Guild';
+  src: local('guildof'), url('../assets/fonts/guildof.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Roboto */
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('../assets/fonts/Roboto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Banshee */
+@font-face {
+  font-family: 'Banshee';
+  src: local('Banshee'), url('../assets/fonts/Banshee.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

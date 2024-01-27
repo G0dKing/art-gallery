@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="../css/gallery.css">
+    <title>Artwork</title>
+</head>
+
+<body>
+    <div class="gallery">
+        <h1>Art Gallery</h1>
+        <div class="gallery-item" onclick="openModal('A')">
+            <img src="A1.jpg" alt="">
+        </div>
+        <div class="gallery-item" onclick="openModal('B')">
+            <img src="B1.jpg" alt="">
+        </div>
+        <div class="gallery-item" onclick="openModal('C')">
+            <img src="C1.jpg" alt="">
+        </div>
+        
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="">
+            <a class="prev" onclick="changeImage(-1)">&lt;</a>
+            <a class="next" onclick="changeImage(1)">&gt;</a>
+        </div>
+    </div>
+
+    <script src="../scripts/gallery.js"></script>
+</body>
+
+</html>

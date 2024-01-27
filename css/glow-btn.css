@@ -1,0 +1,50 @@
+/* css/glow-btn.css */
+
+.button {
+ --glow-color: rgb(98, 0, 255);
+ --glow-spread-color: rgba(0, 195, 255, 0.623);
+ --enhanced-glow-color: rgb(64, 24, 102);
+ --btn-color: rgb(235, 235, 235);
+ border: none;
+ padding: 1em 3em;
+ color: var(--glow-color);
+ font-size: 15px;
+ font-weight: bold;
+ background-color: var(--btn-color);
+ border-radius: 1em;
+ outline: none;
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 2em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+ text-shadow: 0 5 .3em var(--glow-color);
+ position: relative;
+ transition: all 0.5s;
+}
+
+.button::after {
+ pointer-events: none;
+ content: "";
+ position: absolute;
+ top: 120%;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background-color: var(--glow-spread-color);
+ filter: blur(1em);
+ opacity: 1;
+ transform: perspective(4.5em) rotateX(25deg) scale(1, .6);
+}
+
+.button:hover {
+ color: var(--btn-color);
+ background-color: var(--glow-color);
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.button:active {
+ box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
